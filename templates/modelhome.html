@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ML Test</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -s4-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/9daf8e90cb.js"></script>
+</head>
+<body>
+    <h3>Prediction Page</h3>
+    <form class = 'row' 
+    action='http://localhost:5000/predictform'
+    method='POST'>
+        <!-- Row 1 -->
+        <div class='row'>
+            <!-- Input medinc -->
+            <div class="input-field col s3">
+                <input class='validate' id='medinc' 
+                name='medinc' type='text'>
+                <label for='medinc'>Medinc...</label>
+            </div>
+
+            <!-- Input houseage -->
+            <div class="input-field col s3">
+                <input class='validate' id='houseage' 
+                name='houseage' type='text'>
+                <label for='houseage'>House Age...</label>
+            </div>
+
+            <!-- Input averooms -->
+            <div class="input-field col s3">
+                <input class='validate' id='averooms' 
+                name='averooms' type='text'>
+                <label for='averooms'>Average Rooms...</label>
+            </div>
+
+            <!-- Input avebedrms -->
+            <div class="input-field col s3">
+                <input class='validate' id='avebedrms' 
+                name='avebedrms' type='text'>
+                <label for='avebedrms'>Average Bedrooms...</label>
+            </div>
+                
+        </div>
+
+        <!-- Row 2 -->
+        <div class='row'>
+            <!-- Input population -->
+            <div class="input-field col s3">
+                <input class='validate' id='population' 
+                name='population' type='text'>
+                <label for='population'>Population...</label>
+            </div>
+
+            <!-- Input aveoccup -->
+            <div class="input-field col s3">
+                <input class='validate' id='aveoccup' 
+                name='aveoccup' type='text'>
+                <label for='aveoccup'>Average Occupation...</label>
+            </div>
+
+            <!-- Input latitude -->
+            <div class="input-field col s3">
+                <input class='validate' id='latitude' 
+                name='latitude' type='text'>
+                <label for='latitude'>Latitude...</label>
+            </div>
+
+            <!-- Input longitude -->
+            <div class="input-field col s3">
+                <input class='validate' id='longitude' 
+                name='longitude' type='text'>
+                <label for='longitude'>Longitude...</label>
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <center class='row'>
+            <button class = 'btn waves-effect waves-light' 
+            type='submit'>
+                Predict Price 
+                <!-- &nbsp; -->
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </center>
+        </div>
+    </form>
+</body>
+</html>

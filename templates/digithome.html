@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -s4-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/9daf8e90cb.js"></script>
+    <style>body{
+        background: url("https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    }</style>
+</head>
+<body>
+    <center>
+    <br><br><br><br><br>
+    <h3 style='color: white'>Integer Prediction Page</h3>
+    <form
+    action='http://localhost:5000/predict' method='POST'
+    enctype='multipart/form-data'> 
+    <br><br><br>
+    <div class="row" style="width:800px; margin:0 auto;">
+        <div class="file-field input-field">
+            <div class="btn">
+            <span>File</span>
+            <input type="file" name="file">
+            </div>
+            <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" style="color: white">
+            </div>
+        </div>
+    </div>
+        <button class = 'btn waves-effect waves-light' 
+        type='submit'>
+            Predict Price 
+            <!-- &nbsp; -->
+            <i class="fas fa-sort-numeric-up-alt"></i>
+        </button>
+    </form>
+    </center>   
+</body>
+</html>
